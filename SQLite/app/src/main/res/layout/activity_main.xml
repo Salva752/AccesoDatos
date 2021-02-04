@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6E6E6E">
+        <Button
+            android:id="@+id/btnEst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudiante"
+            android:layout_weight="1"
+            android:layout_margin="10px"/>
+
+        <Button
+            android:id="@+id/btnCons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultas"
+            android:layout_weight="1"
+            android:layout_margin="10px"/>
+
+        <Button
+            android:id="@+id/btnProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profesor"
+            android:layout_weight="1"
+            android:layout_margin="10px"/>
+    </LinearLayout>
+</LinearLayout>

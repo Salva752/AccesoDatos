@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profesor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6E6E6E"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/btnEst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudiante"
+            android:layout_weight="1"
+            android:layout_margin="10px"/>
+
+        <Button
+            android:id="@+id/btnCons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultas"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profesor"
+            android:layout_weight="1"
+            android:layout_margin="10px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTodosEstudiantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Todos los estudiantes"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnTodosProfesores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Todos los profesores"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnCursoEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudiantes por curso"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnCicloEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudiantes por Ciclo"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvConsultas"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estudiante"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6E6E6E"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/btnEst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudiante"
+            android:layout_weight="1"
+            android:layout_margin="10px"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnCons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultas"
+            android:layout_weight="1"
+            android:layout_margin="10px"/>
+
+        <Button
+            android:id="@+id/btnProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profesor"
+            android:layout_weight="1"
+            android:layout_margin="10px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/etxtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el nombre del alumno"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/etxtEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:hint="Introduce la edad del alumno"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciclo"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/etxtCiclo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el ciclo del alumno"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curso"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/etxtCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el curso del alumno"
+            android:inputType="numberSigned"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota media"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/etxtMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:hint="Introduce la nota media del alumno"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"/>
+    </LinearLayout>
+</LinearLayout>
